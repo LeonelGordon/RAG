@@ -1,0 +1,15 @@
+La arquitectura limpia (Clean Architecture) es un patrón de diseño de software que busca separar las responsabilidades dentro de una aplicación.
+
+Este enfoque propone dividir el sistema en capas bien definidas, donde las reglas de negocio no dependen de detalles externos como frameworks, bases de datos o interfaces de usuario.
+
+Las capas principales suelen ser:
+- Domain: contiene las reglas de negocio puras
+- Application: orquesta los casos de uso
+- Infrastructure: implementa detalles como bases de datos o APIs externas
+- Interface: expone la aplicación al mundo exterior
+
+Una de las ventajas principales es que permite cambiar tecnologías sin afectar la lógica central del sistema.
+
+Por ejemplo, se puede reemplazar una base de datos o un proveedor de IA sin modificar las reglas de negocio.
+
+Este tipo de arquitectura es muy utilizada en sistemas escalables y en proyectos donde se busca mantenibilidad a largo plazo.
