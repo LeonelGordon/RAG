@@ -3,8 +3,16 @@ from app.ingest import process_documents
 from app.embeddings import generate_embeddings
 from app.store import save_embeddings
 from app.retrieval import retrieve
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
