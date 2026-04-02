@@ -6,7 +6,7 @@ Proyecto de Retrieval-Augmented Generation (RAG) construido desde cero en Python
 
 ## Qué hace
 
-- Lee documentos `.txt`
+- Lee documentos `.txt` que se encuentren en la carpeta "Data"
 - Divide el texto en chunks
 - Genera embeddings con un modelo preentrenado
 - Guarda los vectores en disco (JSON)
